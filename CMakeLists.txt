@@ -3,4 +3,9 @@ project(linuxp C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(linuxp src/main.c)
+add_executable(linuxp
+        src/main.c
+
+        src/file.h
+        src/file.c
+)
