@@ -4,6 +4,7 @@
 #include <malloc.h>
 #include <unistd.h>
 #include <fcntl.h>
+#include <errno.h>
 
 #define BUF_SIZE 256
 

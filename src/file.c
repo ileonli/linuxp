@@ -3,6 +3,7 @@
 off_t retrieve_file_size(const char *name) {
     int fd = open(name, O_RDONLY);
     if (fd == -1) {
+        fprintf(stderr, "fail to open file (%s): %s\n", name, strerror(errno));
         return 0;
     }
 
