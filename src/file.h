@@ -1,12 +1,10 @@
 #pragma once
 
-#include <memory.h>
-#include <malloc.h>
-#include <unistd.h>
-#include <fcntl.h>
 #include <errno.h>
-
-#define BUF_SIZE 256
+#include <fcntl.h>
+#include <malloc.h>
+#include <memory.h>
+#include <unistd.h>
 
 off_t retrieve_file_size(const char *name);
 
